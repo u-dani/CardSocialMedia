@@ -1,0 +1,10 @@
+
+.is-card-active {
+    transition-delay: 0s;
+    clip-path: circle(100%);
+    z-index: 200;
+}
+
+.c-card:not(.is-card-active) {
+    transition-delay: .5s;
+}

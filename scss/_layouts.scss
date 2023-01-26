@@ -1,0 +1,26 @@
+
+@use 'variables' as *;
+@use 'mixins';
+
+.l-main {
+    position: relative;
+    width: 650px;
+    height: 400px;
+    border-radius: $border-radius;
+    box-shadow: 1px 3px 5px #00000066;
+
+    @media (max-width: $mobile) {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+.l-nav {
+    position: absolute;
+    z-index: 200;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: max-content;
+    padding: 10px 15px;
+}
